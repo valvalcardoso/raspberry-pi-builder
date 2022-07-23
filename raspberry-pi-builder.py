@@ -9,7 +9,7 @@ width = 1300
 height = 1000
 screen = pg.display.set_mode((width, height))
 
-#posição e tamanho dos componentes 
+#posição dos componentes 
 p_cpu = (471,298)
 t_cpu = (130,100)
 p_ram =  (598,298)
@@ -63,6 +63,26 @@ components_img = {"cpu" : load("img", False, "media/cpu.png", 130, 100),
 #contador
 ok = 0
 
+#função para carregar imagens e áudios.
+
+def load(type,sound,img,width, height):
+
+	if type == "sound":
+		s = pg.mixer.Sound(sound)
+
+		return s
+
+		
+
+	elif type == "img":
+
+		i = pg.image.load(img)
+
+		i = pg.transform.scale(i,(width,height))
+
+		return i		
+
+		
 #classes
 class Board(pg.sprite.Sprite):
 	
