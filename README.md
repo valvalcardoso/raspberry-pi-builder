@@ -8,3 +8,7 @@
   <p>É um joguinho que basicamente consiste em você montar essa placa de Raspberry Pi 4.</p>
 </div>
 
+# Funcionamento
+<video>
+  <source src="readme-media/video.mp4" type="video/mp4">
+</video>
