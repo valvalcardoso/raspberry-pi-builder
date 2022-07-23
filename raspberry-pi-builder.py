@@ -1,5 +1,5 @@
 import pygame as pg
-from monkeyfunctions import load
+
 from random import choice
 #build a raspberry pi!🍓
 
