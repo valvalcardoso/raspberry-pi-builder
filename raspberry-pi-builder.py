@@ -28,36 +28,36 @@ p_w_b = (350,244)
 t_w_b = (93,85)
 
 #imagens e áudios
-bg = load("img", False, "bg.png", width, height)
+bg = load("img", False, "media/bg.png", width, height)
 
-tittle = load("img", False, "text.png", 600,190)
+tittle = load("img", False, "media/text.png", 600,190)
 
-board_img = load("img",False, "board.png", 800,600)
+board_img = load("img",False, "media/board.png", 800,600)
 
-join_audio = pg.mixer.Sound("put.mp3")
+join_audio = pg.mixer.Sound("media/put.mp3")
 
 join_audio.set_volume(1.0)
 
-isso_bb = pg.mixer.Sound("eita bb (1).mp3")
+isso_bb = pg.mixer.Sound("media/eita bb (1).mp3")
 
-nao_bb = pg.mixer.Sound("aí não bb.mp3")
+nao_bb = pg.mixer.Sound("media/aí não bb.mp3")
 
 nao_bb.set_volume(1.0)
 
 isso_bb.set_volume(1.0)
 
-aê = pg.mixer.Sound("aplausos.mp3")
+aê = pg.mixer.Sound("media/aplausos.mp3")
 
 aê.set_volume(0.7)
 
-components_img = {"cpu" : load("img", False, "cpu.png", 130, 100), 
-"ram" : load("img", False, "ram.png", 100,100), 
-"fonte" : load("img", False, "fonte.png", 80,43), 
-"usb2" : load("img", False, "usb2.png", 150,85), 
-"usb3" : load("img", False, "usb3.png", 150,85), 
-"w&b" : load("img", False, "wifi&blue.png", 93,85), 
-"audio" : load("img", False, "audio.png", 70,100), 
-"ethernet" : load("img", False, "ethernet.png", 170,100)
+components_img = {"cpu" : load("img", False, "media/cpu.png", 130, 100), 
+"ram" : load("img", False, "media/ram.png", 100,100), 
+"fonte" : load("img", False, "media/fonte.png", 80,43), 
+"usb2" : load("img", False, "media/usb2.png", 150,85), 
+"usb3" : load("img", False, "media/usb3.png", 150,85), 
+"w&b" : load("img", False, "media/wifi&blue.png", 93,85), 
+"audio" : load("img", False, "media/audio.png", 70,100), 
+"ethernet" : load("img", False, "media/ethernet.png", 170,100)
 }
 
 #contador
@@ -133,9 +133,12 @@ class Components(pg.sprite.Sprite):
 		
 
 
-MotherBoard = Board()
+
 
 #criando os objetos
+
+MotherBoard = Board()
+
 cpu = Components(components_img["cpu"], 1050,400, t_cpu, p_cpu)
 
 ram = Components(components_img["ram"], 10,500, t_ram, p_ram)
